@@ -1,2 +1,5 @@
-.sublime-project
-.sublime-workspace
+# Sublime files
+*.sublime-project
+*.sublime-workspace
+
+styles/fonts/*
