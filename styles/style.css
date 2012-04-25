@@ -32,164 +32,164 @@
 }
 
 html {
-	background: #9BA2B0;
+  background: #9BA2B0;
 }
 
 a, a:visited {
-	color: inherit;
-	text-decoration: underline;
+  color: inherit;
+  text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'LinuxLibertineORegular', georgia, serif;
+  font-family: 'LinuxLibertineORegular', georgia, serif;
 }
 
 body {
-	-moz-box-shadow: 0 0 5px 2px #aaa;
-	-webkit-box-shadow: 0 0 5px 2px #aaa;
-	box-shadow: 0 0 5px 2px #aaa;
-	background: white;
-	color: #525152;
-	font-family: Cambria, georgia, serif;
-	margin: 1em auto;
-	padding: 5em 10%;
-	width: 600px;
+  -moz-box-shadow: 0 0 5px 2px #aaa;
+  -webkit-box-shadow: 0 0 5px 2px #aaa;
+  box-shadow: 0 0 5px 2px #aaa;
+  background: white;
+  color: #525152;
+  font-family: Cambria, georgia, serif;
+  margin: 1em auto;
+  padding: 5em 10%;
+  width: 600px;
 }
 
 header {
-	border-bottom: 1px solid #666;
-	text-align: center;
+  border-bottom: 1px solid #666;
+  text-align: center;
 }
 
 strong, b {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 header > h1 {
-	display: block;
-	font-size: 3.5em;
+  display: block;
+  font-size: 3.5em;
 }
 
 header > h2 {
-	font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .contacts {
-	font-size: 1em;
-	margin: 1em auto;
+  font-size: 1em;
+  margin: 1em auto;
 }
 
 .contacts li {
-	height: 1.5em;
+  height: 1.5em;
 }
 
 .contacts .social > li {
-	display: inline;
-	margin-left: .5em;
+  display: inline;
+  margin-left: .5em;
 }
 
 .contacts .social > li:before {
-	color: #6f98b4;
-	content: '• ';
+  color: #6f98b4;
+  content: '• ';
 }
 
 .contacts address {
-	margin: .5em 0;
+  margin: .5em 0;
 }
 
 section {
-	margin: 2em 0;
+  margin: 2em 0;
 }
 
 section > h1 {
-	color: #6f98b4;
-	font-family: 'DejaVuSerifCondensed', georgia, serif;
-	font-size: 1.2em;
+  color: #6f98b4;
+  font-family: 'DejaVuSerifCondensed', georgia, serif;
+  font-size: 1.2em;
 }
 
 section > article {
-	padding: .4em 0;
+  padding: .4em 0;
 }
 
 article > p {
-	margin: .6em 0;
+  margin: .6em 0;
 }
 
 section > .content {
-	border-top: 2px solid #cdcdcd;
-	border-bottom: 2px solid #cdcdcd;
-	margin: .5em 0;
+  border-top: 2px solid #cdcdcd;
+  border-bottom: 2px solid #cdcdcd;
+  margin: .5em 0;
 }
 
 ol.timeline > li > .date {
-	float: left;
+  float: left;
 }
 
 section.expertise > div.content {
-	padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 section.expertise > div.content > ul {
-	margin: .5em 0;
+  margin: .5em 0;
 }
 
 section.expertise > div.content > ul > li {
-	list-style-type: disc;
-	padding: .4em 0;
+  list-style-type: disc;
+  padding: .4em 0;
 }
 
 section.experience ol.timeline > li > .date + div {
-	margin-left: 10rem;
+  margin-left: 10rem;
 }
 
 section.work ol.timeline > li > .date + div,
 section.education ol.timeline > li > .date + div {
-	margin-left: 10rem;
+  margin-left: 10rem;
 }
 
 ol.timeline > li:first-child {
-	border-top: none;
-	margin-top: 0.5em;
+  border-top: none;
+  margin-top: 0.5em;
 }
 
 ol.timeline > li:last-child {
-	margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 ol.timeline > li {
-	border-top: 1px solid #cdcdcd;
-	list-style: none;
-	font-size: 1em;
-	line-height: 1.2em;
-	padding: .4em 0;
+  border-top: 1px solid #cdcdcd;
+  list-style: none;
+  font-size: 1em;
+  line-height: 1.2em;
+  padding: .4em 0;
 }
 
 div.entry > address {
-	font-family: 'DroidSerifItalic', georgia, serif;
-	font-size: .8em;
+  font-family: 'DroidSerifItalic', georgia, serif;
+  font-size: .8em;
 }
 
 footer {
-	font-style: italic;
-	margin-top: 1em;
+  font-style: italic;
+  margin-top: 1em;
 }
 
 @media print {
-	a, a:visited {
-		text-decoration: none;
-	}
+  a, a:visited {
+    text-decoration: none;
+  }
 
-	body {
-		-moz-box-shadow: none;
-		-webkit-box-shadow: none;
-		box-shadow: none;
-	}
+  body {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 
-	section.experience {
-		page-break-before: always;
-	}
+  section.experience {
+    page-break-before: always;
+  }
 
-	section.education  {
-		page-break-before: always;
-	}
+  section.education  {
+    page-break-before: always;
+  }
 }
