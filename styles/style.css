@@ -36,7 +36,7 @@ html {
 }
 
 a, a:visited {
-  color: inherit;
+  color: #525152;
   text-decoration: underline;
 }
 
@@ -53,7 +53,7 @@ body {
   font-family: Cambria, georgia, serif;
   margin: 1em auto;
   padding: 5em 10%;
-  width: 600px;
+  width: 37.5em;
 }
 
 header {
@@ -139,12 +139,12 @@ section.expertise > div.content > ul > li {
 }
 
 section.experience ol.timeline > li > .date + div {
-  margin-left: 10rem;
+  margin-left: 10em;
 }
 
 section.work ol.timeline > li > .date + div,
 section.education ol.timeline > li > .date + div {
-  margin-left: 10rem;
+  margin-left: 10em;
 }
 
 ol.timeline > li:first-child {
