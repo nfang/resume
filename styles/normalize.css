@@ -28,3 +28,6 @@ q:before,q:after {
 }
 abbr,acronym { border:0;}
 
+a:-webkit-any-link {
+	text-decoration: none;
+};
