@@ -141,12 +141,7 @@ section.expertise > div.content > ul > li {
   padding: .4em 0;
 }
 
-section.experience ol.timeline > li > .date + div {
-  margin-left: 10em;
-}
-
-section.work ol.timeline > li > .date + div,
-section.education ol.timeline > li > .date + div {
+ol.timeline > li > .date + div {
   margin-left: 10em;
 }
 
@@ -177,6 +172,21 @@ footer {
   margin-top: 1em;
 }
 
+@media only screen and (max-device-width: 600px) {
+  body {
+    font-size: 80%;
+    width: auto;
+  }
+
+  ol.timeline > li > .date {
+    max-width: 4.5em;
+  }
+
+  ol.timeline > li > .date + div {
+    margin-left: 5.5em;
+  }
+}
+
 @media print {
   a, a:visited {
     border-bottom: none;
@@ -188,11 +198,8 @@ footer {
     box-shadow: none;
   }
 
-  section.experience {
-    page-break-before: always;
-  }
-
-  section.education  {
+  section.experience,
+  section.education {
     page-break-before: always;
   }
 }
