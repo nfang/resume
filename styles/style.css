@@ -141,7 +141,7 @@ section.expertise > div.content > ul > li {
   padding: .4em 0;
 }
 
-ol.timeline > li > .date + div {
+ol.timeline > li > div.entry {
   margin-left: 10em;
 }
 
@@ -172,18 +172,28 @@ footer {
   margin-top: 1em;
 }
 
-@media only screen and (max-device-width: 600px) {
+@media (max-device-width: 600px) {
   body {
     font-size: 80%;
+    margin: 0;
     width: auto;
   }
 
   ol.timeline > li > .date {
-    max-width: 4.5em;
+    max-width: 4.8em;
+    text-align: right;
   }
 
-  ol.timeline > li > .date + div {
-    margin-left: 5.5em;
+  ol.timeline > li > div.entry {
+    margin-left: 5.8em;
+  }
+
+  span.nowrap {
+    white-space: nowrap;
+  }
+
+  span.nowrap:before {
+    content: '\a';
   }
 }
 
