@@ -40,7 +40,7 @@ html {
 a, a:visited {
   color: #525152;
   text-decoration: none;
-  border-bottom: 1px dashed #aaa;
+  border-bottom: 1px dashed #aaaaaa;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,9 +48,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  -moz-box-shadow: 0 0 5px 2px #aaa;
-  -webkit-box-shadow: 0 0 5px 2px #aaa;
-  box-shadow: 0 0 5px 2px #aaa;
+  -moz-box-shadow: 0 0 5px 2px #aaaaaa;
+  -webkit-box-shadow: 0 0 5px 2px #aaaaaa;
+  box-shadow: 0 0 5px 2px #aaaaaa;
   background: white;
   color: #525152;
   font-family: Cambria, georgia, serif;
