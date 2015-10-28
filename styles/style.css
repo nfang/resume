@@ -208,8 +208,7 @@ footer {
     box-shadow: none;
   }
 
-  section.experience,
-  section.education {
+  section.experience {
     page-break-before: always;
   }
 }
