@@ -15,12 +15,12 @@
                 <span>{{item.position}}</span>
                 <span class="experience-company" *ngIf="item.company">{{item.company}}</span>
               </h3>
-              <h4 class="experience-subtitle">
+              <div class="experience-subtitle">
                 <span>{{item.period.from}} - {{item.period.to}}</span>
                 <span class="experience-location" *ngIf="item.location">{{item.location}}</span>
-              </h4>
+              </div>
             </header>
-            <article class="experience-contents">{{item.description}}</article>
+            <article class="experience-description">{{item.description}}</article>
           </li>
         </ol>
       </section>
@@ -30,10 +30,12 @@
         <ol class="portfolio">
           <li class="project" *ngFor="let item of data.portfolio">
             <header class="project-header">
-              <h3 class="project-name">{{item.name}}</h3>
+              <h3 class="project-name">
+                <a class="project-link" href="{{item.link}}" target="_blank">{{item.name}}</a>
+              </h3>
               <time class="project-date">{{item.date}}</time>
             </header>
-            <article class="project-desc">{{item.description}}</article>
+            <article class="project-description">{{item.description}}</article>
             <footer class="project-technologies">
               <i class="fa fa-tags"></i>{{item.technologies}}</footer>
           </li>
@@ -62,13 +64,13 @@
           </div>
           <div class="profile-contact">
             <i class="fa fa-linkedin"></i>
-            <a href="{{data.profile.contacts.linkedin.href}}">
+            <a href="{{data.profile.contacts.linkedin.href}}" target="_blank">
               {{data.profile.contacts.linkedin.text}}
             </a>
           </div>
           <div class="profile-contact">
             <i class="fa fa-github"></i>
-            <a href="{{data.profile.contacts.github.href}}">
+            <a href="{{data.profile.contacts.github.href}}" target="_blank">
               {{data.profile.contacts.github.text}}
             </a>
           </div>
@@ -92,10 +94,10 @@
           <li class="education" *ngFor="let item of data.education">
             <header class="education-header">
               <h3 class="education-title">{{item.degree}}</h3>
-              <h4 class="education-subtitle">
+              <div class="education-subtitle">
                 <span class="education-institution">{{item.institution}}</span>
                 <span class="education-period">{{item.period.from}} - {{item.period.to}}</span>
-              </h4>
+              </div>
             </header>
             <article class="education-description">{{item.description}}</article>
           </li>

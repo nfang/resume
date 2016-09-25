@@ -4,14 +4,17 @@ $heading-color:    #434343;
 $subheading-color: #535953;
 $text-color:       #787d7b;
 
+$sans-serif-normal:  'Open Sans', 'Helvetica Neue', arial, sans-serif;
+$sans-serif-heading: 'Lato', 'Open Sans', 'Helvetica Neue', arial, sans-serif;
+
 .page {
   box-sizing: border-box;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   background: $page-color;
+  color: $text-color;
   padding: 0 5rem;
   display: flex;
   flex-direction: column;
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: $sans-serif-normal;
   margin: 0 auto;
 
   &:before, &:after {
@@ -34,7 +37,7 @@ main {
 }
 
 section > h2 {
-  font-family: 'Lato', sans-serif;
+  font-family: $sans-serif-heading;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
@@ -70,20 +73,19 @@ section + section {
   text-align: center;
 
   &-name {
-    font-family: 'Lato', sans-serif;
+    font-family: $sans-serif-heading;
     font-size: 3rem;
     letter-spacing: .5rem;
     line-height: 1.5;
   }
 
   &-title {
-    color: $text-color;
     font-size: 1rem;
   }
 }
 
 /**
- * Work experience
+ * Experience
  */
 .experience {
   border-bottom: 1px solid $border-color;
@@ -100,30 +102,27 @@ section + section {
   }
 
   &-title {
-    font-weight: 600;
+    font-weight: 700;
   }
 
   &-subtitle {
     color: $subheading-color;
     font-size: .8rem;
-    font-weight: 400;
+    line-height: 1.5;
   }
 
-  &-contents {
-    color: $text-color;
+  &-description {
     font-size: .8rem;
     line-height: 1.5;
   }
 
   &-company:before {
     content: '/';
-    display: inline;
     padding: 0 5px;
   }
 
   &-location:before {
     content: '|';
-    display: inline;
     padding: 0 5px;
   }
 }
@@ -133,8 +132,6 @@ section + section {
  */
 .profile {
   &-intro {
-    color: $text-color;
-
     > p {
       line-height: 1.5;
       margin-bottom: 1rem;
@@ -142,8 +139,8 @@ section + section {
   }
 
   &-contact {
-    font-size: .8rem;
     color: $subheading-color;
+    font-size: .8rem;
     line-height: 2;
     padding-bottom: .25rem;
 
@@ -188,7 +185,7 @@ section + section {
   margin-bottom: 1.25rem;
 
   &-header {
-    margin-bottom: .75rem;
+    margin-bottom: .5rem;
   }
 
   &-title {
@@ -199,7 +196,7 @@ section + section {
   &-subtitle {
     color: $subheading-color;
     font-size: .8rem;
-    font-weight: 400;
+    line-height: 1.5;
   }
 
   &-period:before {
@@ -208,7 +205,6 @@ section + section {
   }
 
   &-description {
-    color: $text-color;
     line-height: 1.5;
   }
 }
@@ -223,10 +219,12 @@ section + section {
   justify-content: space-between;
 
   .project {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    width: 252px;
+    padding-right: 1rem;
     margin-bottom: 2rem;
+    width: 50%;
 
     &-header {
       margin-bottom: .5rem;
@@ -235,6 +233,12 @@ section + section {
     &-name {
       font-size: .95rem;
       font-weight: 700;
+      margin-bottom: .25rem;
+
+      > a {
+        border-bottom: 1px dashed $border-color;
+        padding-bottom: 2px;
+      }
     }
 
     &-date {
@@ -242,33 +246,31 @@ section + section {
       font-size: .8rem;
     }
 
-    &-desc {
-      flex: 1 0 auto;
+    &-description, &-technologies {
+      font-size: .8rem;
     }
 
-    &-desc, &-technologies {
-      color: $text-color;
-      font-size: .8rem;
+    &-description {
+      flex: 1 0 auto;
       line-height: 1.5;
     }
 
     &-technologies {
       padding-top: .8rem;
       > i {
-        margin-right: .25rem;
+        margin-right: .5rem;
       }
     }
   }
 }
 
 .reference {
-  color: $text-color;
   font-size: .8rem;
 }
 
 .footer {
   color: #bdc0ba;
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: $sans-serif-normal;
   font-size: .8rem;
   text-align: center;
   margin: 2em 0;

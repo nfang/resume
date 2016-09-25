@@ -167,12 +167,14 @@ export const RESUME = {
     {
       'name': 'Haru - daily task manager',
       'date': 'Apr 2016',
+      'link': 'https://haruapp.surge.sh',
       'technologies': 'Angular 2, Material Design, ES6',
       'description': `A daily task manager app.`
     },
     {
       'name': 'LuckyDraw for Piaget',
       'date': 'May 2015',
+      'link': 'http://keno-demo.rubik-media.surge.sh',
       'technologies': 'JavaScript, CSS3 animation, HTML5',
       'description': `
         A web app that picks winners from all guests who attended the Piaget
@@ -182,6 +184,7 @@ export const RESUME = {
     {
       'name': 'Kerry Centre NYE wish wall',
       'date': 'Dec 2014',
+      'link': 'http://kc.ww.surge.sh',
       'technologies': 'jQuery, CSS3 animation',
       'description': `
         An interactive visual product that allows guests to write New Year wishes
@@ -191,6 +194,7 @@ export const RESUME = {
     {
       'name': 'LMI PolicyComparison',
       'date': 'Sept 2013',
+      'link': 'http://policycomparison.com',
       'technologies': 'ASP.NET, C#, jQuery, LESS',
       'description': `
         LMI PolicyComparison is a web-based service that provides assistance with
