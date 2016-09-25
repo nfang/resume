@@ -1,0 +1,115 @@
+<div class="page">
+  <header class="header">
+    <h1 class="header-name">NATHAN FANG</h1>
+    <p class="header-title">WEB SOLUTION ARCHITECT</p>
+  </header>
+
+  <main>
+    <div class="column-left">
+      <section>
+        <h2>EXPERIENCE</h2>
+        <ol>
+          <li class="experience" *ngFor="let item of data.work_experience">
+            <header class="experience-header">
+              <h3 class="experience-title">
+                <span>{{item.position}}</span>
+                <span class="experience-company" *ngIf="item.company">{{item.company}}</span>
+              </h3>
+              <div class="experience-subtitle">
+                <span>{{item.period.from}} - {{item.period.to}}</span>
+                <span class="experience-location" *ngIf="item.location">{{item.location}}</span>
+              </div>
+            </header>
+            <article class="experience-description">{{item.description}}</article>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>PORTFOLIO</h2>
+        <ol class="portfolio">
+          <li class="project" *ngFor="let item of data.portfolio">
+            <header class="project-header">
+              <h3 class="project-name">
+                <a class="project-link" href="{{item.link}}" target="_blank">{{item.name}}</a>
+              </h3>
+              <time class="project-date">{{item.date}}</time>
+            </header>
+            <article class="project-description">{{item.description}}</article>
+            <footer class="project-technologies">
+              <i class="fa fa-tags"></i>{{item.technologies}}</footer>
+          </li>
+        </ol>
+      </section>
+    </div>
+
+    <div class="column-right">
+      <section>
+        <h2>PROFILE</h2>
+        <article class="profile-intro">
+          <p *ngFor="let para of data.profile.intro">{{para}}</p>
+        </article>
+        <address>
+          <div class="profile-contact">
+            <i class="fa fa-envelope-o"></i>
+            <a href="{{data.profile.contacts.email.href}}">
+              {{data.profile.contacts.email.text}}
+            </a>
+          </div>
+          <div class="profile-contact">
+            <i class="fa fa-phone"></i>
+            <a href="{{data.profile.contacts.phone.href}}">
+              {{data.profile.contacts.phone.text}}
+            </a>
+          </div>
+          <div class="profile-contact">
+            <i class="fa fa-linkedin"></i>
+            <a href="{{data.profile.contacts.linkedin.href}}" target="_blank">
+              {{data.profile.contacts.linkedin.text}}
+            </a>
+          </div>
+          <div class="profile-contact">
+            <i class="fa fa-github"></i>
+            <a href="{{data.profile.contacts.github.href}}" target="_blank">
+              {{data.profile.contacts.github.text}}
+            </a>
+          </div>
+        </address>
+      </section>
+
+      <section>
+        <h2>EXPERTISE</h2>
+        <ul>
+          <li class="expertise" *ngFor="let item of data.expertise">
+            <span class="expertise-skill">{{item.skill}}</span>
+            <rsm-gauge class="expertise-gauge" [max]="100" [value]="item.level" [color]="'#69b0ac'">
+            </rsm-gauge>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>EDUCATION</h2>
+        <ol>
+          <li class="education" *ngFor="let item of data.education">
+            <header class="education-header">
+              <h3 class="education-title">{{item.degree}}</h3>
+              <div class="education-subtitle">
+                <span class="education-institution">{{item.institution}}</span>
+                <span class="education-period">{{item.period.from}} - {{item.period.to}}</span>
+              </div>
+            </header>
+            <article class="education-description">{{item.description}}</article>
+          </li>
+        </ol>
+      </section>
+
+      <aside class="reference">References are available upon request.</aside>
+    </div>
+  </main>
+</div>
+
+<footer class="footer">
+  <span class="copyright">Copyright &copy; 2016 Nathan Fang.</span>
+  <time>Last updated on Sept 25th, 2016</time>
+</footer>

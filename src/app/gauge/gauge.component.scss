@@ -1,0 +1,14 @@
+:host {
+  display: block;
+}
+
+.meter {
+  background: #bdc0ba;
+  position: relative;
+  height: 100%;
+}
+
+.fill {
+  position: absolute;
+  height: 100%;
+}

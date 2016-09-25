@@ -1,0 +1,285 @@
+$page-color:       #fcfaf2;
+$border-color:     #bdc0ba;
+$heading-color:    #434343;
+$subheading-color: #535953;
+$text-color:       #787d7b;
+
+$sans-serif-normal:  'Open Sans', 'Helvetica Neue', arial, sans-serif;
+$sans-serif-heading: 'Lato', 'Open Sans', 'Helvetica Neue', arial, sans-serif;
+
+.page {
+  box-sizing: border-box;
+  background: $page-color;
+  color: $text-color;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  font-family: $sans-serif-normal;
+  margin: 0 auto;
+
+  &:before, &:after {
+    content: '';
+    display: block;
+    background: #b28fce;
+    height: .5rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex: 1 0 auto;
+}
+
+section > h2 {
+  font-family: $sans-serif-heading;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+section + section {
+  margin-top: 2rem;
+}
+
+.column-left, .column-right {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.column-left {
+  margin-right: 2rem;
+  order: 0;
+  width: 60%;
+}
+
+.column-right {
+  order: 1;
+  width: 40%;
+}
+
+/**
+ * Header
+ */
+.header {
+  font-weight: 300;
+  padding: 5rem 0;
+  text-align: center;
+
+  &-name {
+    font-family: $sans-serif-heading;
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    line-height: 1.5;
+  }
+
+  &-title {
+    font-size: 1rem;
+  }
+}
+
+/**
+ * Experience
+ */
+.experience {
+  border-bottom: 1px solid $border-color;
+  box-sizing: border-box;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &-header {
+    margin-bottom: .5rem;
+  }
+
+  &-title {
+    font-weight: 700;
+  }
+
+  &-subtitle {
+    color: $subheading-color;
+    font-size: .8rem;
+    line-height: 1.5;
+  }
+
+  &-description {
+    font-size: .8rem;
+    line-height: 1.5;
+  }
+
+  &-company:before {
+    content: '/';
+    padding: 0 5px;
+  }
+
+  &-location:before {
+    content: '|';
+    padding: 0 5px;
+  }
+}
+
+/**
+ * Profile
+ */
+.profile {
+  &-intro {
+    > p {
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-contact {
+    color: $subheading-color;
+    font-size: .8rem;
+    line-height: 2;
+    padding-bottom: .25rem;
+
+    > i {
+      font-weight: 700;
+      margin-right: .5rem;
+    }
+  }
+}
+
+/**
+ * Expertise
+ */
+.expertise {
+  font-size: .8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 2rem;
+
+  &-skill {
+    box-sizing: border-box;
+    color: $heading-color;
+    line-height: 1.2;
+    padding-right: .5rem;
+    width: 50%;
+  }
+
+  &-gauge {
+    height: .5rem;
+    width: 50%;
+  }
+}
+
+/**
+ * Education
+ */
+.education {
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  &-header {
+    margin-bottom: .5rem;
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: .95rem;
+  }
+
+  &-subtitle {
+    color: $subheading-color;
+    font-size: .8rem;
+    line-height: 1.5;
+  }
+
+  &-period:before {
+    content: '|';
+    padding: 0 5px;
+  }
+
+  &-description {
+    line-height: 1.5;
+  }
+}
+
+/**
+ * Portfolio
+ */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .project {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+    width: 50%;
+
+    &-header {
+      margin-bottom: .5rem;
+    }
+
+    &-name {
+      font-size: .95rem;
+      font-weight: 700;
+      margin-bottom: .25rem;
+
+      > a {
+        border-bottom: 1px dashed $border-color;
+        padding-bottom: 2px;
+      }
+    }
+
+    &-date {
+      color: $subheading-color;
+      font-size: .8rem;
+    }
+
+    &-description, &-technologies {
+      font-size: .8rem;
+    }
+
+    &-description {
+      flex: 1 0 auto;
+      line-height: 1.5;
+    }
+
+    &-technologies {
+      padding-top: .8rem;
+      > i {
+        margin-right: .5rem;
+      }
+    }
+  }
+}
+
+.reference {
+  font-size: .8rem;
+}
+
+.footer {
+  color: #bdc0ba;
+  font-family: $sans-serif-normal;
+  font-size: .8rem;
+  text-align: center;
+  margin: 2em 0;
+}
+
+@media screen {
+  .page {
+    width: 1050px;
+    height: 1485px;
+    overflow: hidden;
+  }
+}
