@@ -11,7 +11,8 @@ $sans-serif-heading: 'Lato', 'Open Sans', 'Helvetica Neue', arial, sans-serif;
   box-sizing: border-box;
   background: $page-color;
   color: $text-color;
-  padding: 0 5rem;
+  padding: 2rem 5rem;
+  position: relative;
   display: flex;
   flex-direction: column;
   font-family: $sans-serif-normal;
@@ -21,7 +22,17 @@ $sans-serif-heading: 'Lato', 'Open Sans', 'Helvetica Neue', arial, sans-serif;
     content: '';
     display: block;
     background: #b28fce;
+    position: absolute;
+    width: calc(100% - 10rem);
     height: .5rem;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
   }
 }
 
@@ -69,7 +80,7 @@ section + section {
  */
 .header {
   font-weight: 300;
-  padding: 5rem 0;
+  padding: 2rem 0 5rem;
   text-align: center;
 
   &-name {
