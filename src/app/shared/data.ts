@@ -8,9 +8,8 @@ export const RESUME = {
     },
     'intro': [
       `I am passionate about cutting-edge web technologies and aesthetic design.
-       I love researching and discovering new ways to use them in practice, and
-       sharing my experience with other developers.`,
-      `I am able to handle all aspects in a web development process from scoping,
+       I love researching, discovering, and sharing.`,
+      `I am able to handle most aspects in a development life cycle from scoping,
        design, development, deployment, to maintenance. I especially enjoy doing
        UX design, performance tuning, and building scalable and extendable front-end
        and back-end architecture.`
@@ -81,7 +80,8 @@ export const RESUME = {
         'to': new Date(2012, 5, 30)
       },
       'description': `
-        Teaching Component Technology, Handheld Application and Operating System, Web System.
+        Teaching Component Technology, Handheld Application and Operating System,
+        Web System.
       `
     },
     {
@@ -94,7 +94,7 @@ export const RESUME = {
       },
       'description': `
         Working on various kinds of projects, including web design & development,
-        desktop application development, IT consulting.
+        desktop application development, and IT consulting.
       `
     },
     {
@@ -161,7 +161,7 @@ export const RESUME = {
         'to': new Date(2008, 5, 30)
       },
       'description': `
-        Specialised in Information Technology and Information System (GPA: 3.54 / 4).
+        Specialised in Information Management and Information System (GPA: 3.54 / 4).
       `
     }
   ],
@@ -171,7 +171,7 @@ export const RESUME = {
       'date': new Date(2016, 5, 20),
       'link': 'https://haruapp.surge.sh',
       'technologies': 'Angular 2, Material Design, ES6',
-      'description': `A daily task manager app.`
+      'description': `A daily task manager.`
     },
     {
       'name': 'LuckyDraw for Piaget',
@@ -179,7 +179,7 @@ export const RESUME = {
       'link': 'http://keno-demo.rubik-media.surge.sh',
       'technologies': 'JavaScript, CSS3 animation, HTML5',
       'description': `
-        A web app that picks winners from all guests who attended the Piaget
+        A web app that picks winners from all attendees of a Piaget
         product launch event.
       `
     },
@@ -189,7 +189,7 @@ export const RESUME = {
       'link': 'http://kc.ww.surge.sh',
       'technologies': 'jQuery, CSS3 animation',
       'description': `
-        An interactive visual product that allows guests to write New Year wishes
+        An interactive visual product that lets people write New Year wishes
         on tablets, and projects them to an LED screen.
       `
     },
@@ -199,9 +199,9 @@ export const RESUME = {
       'link': 'http://policycomparison.com',
       'technologies': 'ASP.NET, C#, jQuery, LESS',
       'description': `
-        LMI PolicyComparison is a web-based service that provides assistance with
-        selling insurance products, compliance requirements, regulatory training,
-        knowledge management and more.
+        A web-based service that provides assistance with selling insurance
+        products, compliance requirements, regulatory training, knowledge management
+        and more.
       `
     }
   ]
