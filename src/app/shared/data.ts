@@ -1,3 +1,5 @@
+const PRESENT: Date = void(0);
+
 export const RESUME = {
   'profile': {
     'name': {
@@ -32,14 +34,14 @@ export const RESUME = {
       }
     }
   },
-  'work_experience': [
+  'experience': [
     {
       'company': 'LMI Group',
       'position': 'Senior Analyst Programmer',
       'location': 'Melbourne',
       'period': {
-        'from': 'Mar 2016',
-        'to': 'Present'
+        'from': new Date(2016, 2, 21),
+        'to': PRESENT
       },
       'description': ``
     },
@@ -48,8 +50,8 @@ export const RESUME = {
       'position': 'Senior Front-End Engineer',
       'location': 'Shanghai',
       'period': {
-        'from': 'Mar 2014',
-        'to': 'Nov 2015'
+        'from': new Date(2014, 2, 17),
+        'to': new Date(2015, 10, 11)
       },
       'description': `
         Responsible for developing interactive visual products and SaaS platform.
@@ -61,8 +63,8 @@ export const RESUME = {
       'position': 'Senior Analyst Programmer',
       'location': 'Melbourne',
       'period': {
-        'from': 'Jan 2011',
-        'to': 'Feb 2014'
+        'from': new Date(2011, 0, 6),
+        'to': new Date(2014, 1, 28)
       },
       'description': `
         Responsible for designing and developing the company's flagship products.
@@ -75,8 +77,8 @@ export const RESUME = {
       'position': 'Sessional Tutor',
       'location': 'Melbourne',
       'period': {
-        'from': 'Mar 2010',
-        'to': 'Jun 2012'
+        'from': new Date(2010, 2, 1),
+        'to': new Date(2012, 5, 30)
       },
       'description': `
         Teaching Component Technology, Handheld Application and Operating System, Web System.
@@ -87,8 +89,8 @@ export const RESUME = {
       'position': 'Freelance Developer',
       'location': 'Worldwide',
       'period': {
-        'from': 'Feb 2009',
-        'to': 'Present'
+        'from': new Date(2009, 1, 1),
+        'to': PRESENT
       },
       'description': `
         Working on various kinds of projects, including web design & development,
@@ -100,8 +102,8 @@ export const RESUME = {
       'position': 'Software Engineer',
       'location': 'Shanghai',
       'period': {
-        'from': 'Jul 2008',
-        'to': 'Jan 2009'
+        'from': new Date(2008, 6, 11),
+        'to': new Date(2009, 0, 25)
       },
       'description': `
         Responsible for application framework development and requirement analysis.
@@ -143,8 +145,8 @@ export const RESUME = {
       'institution': 'Monash University',
       'degree': 'Master of Information Technology Professional',
       'period': {
-        'from': '2009',
-        'to': '2010'
+        'from': new Date(2009, 2, 2),
+        'to': new Date(2010, 11, 14)
       },
       'description': `
         Specialised in Distributed and Mobile Systems, Internet and Web Development,
@@ -155,8 +157,8 @@ export const RESUME = {
       'institution': 'Shanghai University',
       'degree': 'Bachelor of Management',
       'period': {
-        'from': '2004',
-        'to': '2008'
+        'from': new Date(2004, 8, 1),
+        'to': new Date(2008, 5, 30)
       },
       'description': `
         Specialised in Information Technology and Information System (GPA: 3.54 / 4).
@@ -166,14 +168,14 @@ export const RESUME = {
   'portfolio': [
     {
       'name': 'Haru - daily task manager',
-      'date': 'Apr 2016',
+      'date': new Date(2016, 5, 20),
       'link': 'https://haruapp.surge.sh',
       'technologies': 'Angular 2, Material Design, ES6',
       'description': `A daily task manager app.`
     },
     {
       'name': 'LuckyDraw for Piaget',
-      'date': 'May 2015',
+      'date': new Date(2015, 4, 12),
       'link': 'http://keno-demo.rubik-media.surge.sh',
       'technologies': 'JavaScript, CSS3 animation, HTML5',
       'description': `
@@ -183,7 +185,7 @@ export const RESUME = {
     },
     {
       'name': 'Kerry Centre NYE wish wall',
-      'date': 'Dec 2014',
+      'date': new Date(2014, 11, 31),
       'link': 'http://kc.ww.surge.sh',
       'technologies': 'jQuery, CSS3 animation',
       'description': `
@@ -193,7 +195,7 @@ export const RESUME = {
     },
     {
       'name': 'LMI PolicyComparison',
-      'date': 'Sept 2013',
+      'date': new Date(2013, 8, 24),
       'link': 'http://policycomparison.com',
       'technologies': 'ASP.NET, C#, jQuery, LESS',
       'description': `
