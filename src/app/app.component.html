@@ -9,14 +9,16 @@
       <section>
         <h2>EXPERIENCE</h2>
         <ol>
-          <li class="experience" *ngFor="let item of data.work_experience">
+          <li class="experience" *ngFor="let item of experience">
             <header class="experience-header">
               <h3 class="experience-title">
                 <span>{{item.position}}</span>
                 <span class="experience-company" *ngIf="item.company">{{item.company}}</span>
               </h3>
               <div class="experience-subtitle">
-                <span>{{item.period.from}} - {{item.period.to}}</span>
+                <span>{{item.period.from | date:'MMM y' }}</span> -
+                <span *ngIf="item.period.to">{{item.period.to | date:'MMM y' }}</span>
+                <span *ngIf="!item.period.to">Present</span>
                 <span class="experience-location" *ngIf="item.location">{{item.location}}</span>
               </div>
             </header>
@@ -33,7 +35,7 @@
               <h3 class="project-name">
                 <a class="project-link" href="{{item.link}}" target="_blank">{{item.name}}</a>
               </h3>
-              <time class="project-date">{{item.date}}</time>
+              <time class="project-date">{{item.date | date:'MMM y'}}</time>
             </header>
             <article class="project-description">{{item.description}}</article>
             <footer class="project-technologies">
@@ -91,12 +93,14 @@
       <section>
         <h2>EDUCATION</h2>
         <ol>
-          <li class="education" *ngFor="let item of data.education">
+          <li class="education" *ngFor="let item of education">
             <header class="education-header">
               <h3 class="education-title">{{item.degree}}</h3>
               <div class="education-subtitle">
                 <span class="education-institution">{{item.institution}}</span>
-                <span class="education-period">{{item.period.from}} - {{item.period.to}}</span>
+                <span class="education-period">
+                  {{item.period.from | date:'y' }} - {{item.period.to | date:'y' }}
+                </span>
               </div>
             </header>
             <article class="education-description">{{item.description}}</article>
@@ -111,5 +115,5 @@
 
 <footer class="footer">
   <span class="copyright">Copyright &copy; 2016 Nathan Fang.</span>
-  <time>Last updated on Sept 25th, 2016</time>
+  <time>Last updated on Sept 26th, 2016</time>
 </footer>

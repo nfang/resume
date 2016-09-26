@@ -16,4 +16,19 @@ export class AppComponent implements OnInit {
     let particlesJS = window['particlesJS'];
     particlesJS.load('particles-js', 'assets/particles.json');
   }
+
+  private comparePeriod(a: { from: Date, to: Date }, b: { from: Date, to: Date }): number {
+    if (!a.to || !b.to) {
+      return b.from.getTime() - a.from.getTime();
+    }
+    return b.to.getTime() - a.to.getTime();
+  }
+
+  get experience() {
+    return RESUME.experience.sort((a, b) => this.comparePeriod(a.period, b.period));
+  }
+
+  get education() {
+    return RESUME.education.sort((a, b) => this.comparePeriod(a.period, b.period));
+  }
 }
