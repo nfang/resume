@@ -16,7 +16,7 @@ a {
 
 body {
   background: #373c38;
-  padding: 2rem 0;
+  overflow-x: hidden;
 }
 
 .rsm-bg {
@@ -26,10 +26,6 @@ body {
   width: calc(100vmax - 15px);
   height: 100vmax;
   z-index: 0;
-}
-
-body {
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .loading,

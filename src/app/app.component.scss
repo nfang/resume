@@ -7,6 +7,12 @@ $text-color:       #787d7b;
 $sans-serif-normal:  'Open Sans', 'Helvetica Neue', arial, sans-serif;
 $sans-serif-heading: 'Lato', 'Open Sans', 'Helvetica Neue', arial, sans-serif;
 
+$aspect-ratio-a4: 210 / 297;
+$aspect-ratio-us-letter: 2159 / 2794;
+
+$header-spacing-l: 2rem 0 5rem;
+$header-spacing-m: 1rem 0 3rem;
+
 .page {
   box-sizing: border-box;
   background: $page-color;
@@ -16,7 +22,7 @@ $sans-serif-heading: 'Lato', 'Open Sans', 'Helvetica Neue', arial, sans-serif;
   display: flex;
   flex-direction: column;
   font-family: $sans-serif-normal;
-  margin: 0 auto;
+  margin: 2rem auto;
 
   &:before, &:after {
     content: '';
@@ -149,6 +155,12 @@ section + section {
     }
   }
 
+  &-contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
   &-contact {
     color: $subheading-color;
     font-size: .8rem;
@@ -218,6 +230,10 @@ section + section {
   &-description {
     line-height: 1.5;
   }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /**
@@ -277,6 +293,9 @@ section + section {
 
 .reference {
   font-size: .8rem;
+  margin: 1.25rem 0;
+
+  &.bottom { display: none; }
 }
 
 .footer {
@@ -287,10 +306,87 @@ section + section {
   margin: 2em 0;
 }
 
-@media screen {
+@media (max-width: 750px) {
+  main {
+    flex-wrap: wrap;
+  }
+
+  section {
+    margin-bottom: 1.25rem;
+  }
+
+  section > h2 {
+    margin-bottom: 1rem;
+  }
+
+  section + section {
+    margin-top: 0;
+  }
+
+  .profile {
+    &-contacts {
+      flex-direction: row;
+    }
+
+    &-contact {
+      width: 50%;
+    }
+  }
+
+  .header {
+    padding: 2rem 0;
+  }
+
+  .header-name {
+    font-size: 2.5rem;
+  }
+
   .page {
+    &:before, &:after {
+      width: calc(100% - 8rem);
+    }
+    margin: 2rem;
+    padding: 2rem 4rem;
+  }
+
+  .column-left, .column-right {
+    width: 100%;
+  }
+
+  .column-right {
+    order: 0;
+  }
+
+  .column-left {
+    margin: 0;
+    order: 1;
+  }
+
+  .reference.side {
+    display: none;
+  }
+
+  .reference.bottom {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .page {
+    &:before, &:after {
+      width: calc(100% - 7rem);
+    }
+    padding: 2rem 3.5rem;
+    width: 960px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .page {
+    &:before, &:after {
+      width: calc(100% - 10rem);
+    }
+    padding: 2rem 5rem;
     width: 1050px;
-    height: 1485px;
-    overflow: hidden;
   }
 }
