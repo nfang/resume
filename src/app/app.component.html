@@ -51,7 +51,7 @@
         <article class="profile-intro">
           <p *ngFor="let para of data.profile.intro">{{para}}</p>
         </article>
-        <address>
+        <address class="profile-contacts">
           <div class="profile-contact">
             <i class="fa fa-envelope-o"></i>
             <a href="{{data.profile.contacts.email.href}}">
@@ -108,9 +108,10 @@
         </ol>
       </section>
 
-      <aside class="reference">References are available upon request.</aside>
+      <aside class="reference side">References are available upon request.</aside>
     </div>
   </main>
+  <aside class="reference bottom">References are available upon request.</aside>
 </div>
 
 <footer class="footer">

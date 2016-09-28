@@ -1,10 +1,10 @@
-$page-color:       #fcfaf2;
-$border-color:     #bdc0ba;
-$heading-color:    #434343;
+$page-color: #fcfaf2;
+$border-color: #bdc0ba;
+$heading-color: #434343;
 $subheading-color: #535953;
-$text-color:       #787d7b;
+$text-color: #787d7b;
 
-$sans-serif-normal:  'Open Sans', 'Helvetica Neue', arial, sans-serif;
+$sans-serif-normal: 'Open Sans', 'Helvetica Neue', arial, sans-serif;
 $sans-serif-heading: 'Lato', 'Open Sans', 'Helvetica Neue', arial, sans-serif;
 
 .page {
@@ -16,15 +16,16 @@ $sans-serif-heading: 'Lato', 'Open Sans', 'Helvetica Neue', arial, sans-serif;
   display: flex;
   flex-direction: column;
   font-family: $sans-serif-normal;
-  margin: 0 auto;
+  margin: 2rem auto;
 
-  &:before, &:after {
+  &:after,
+  &:before {
     content: '';
     display: block;
     background: #b28fce;
     position: absolute;
     width: calc(100% - 10rem);
-    height: .5rem;
+    height: 0.5rem;
   }
 
   &:before {
@@ -36,7 +37,12 @@ $sans-serif-heading: 'Lato', 'Open Sans', 'Helvetica Neue', arial, sans-serif;
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: $heading-color;
 }
 
@@ -45,6 +51,7 @@ main {
   flex-direction: row;
   align-items: flex-start;
   flex: 1 0 auto;
+  flex-wrap: wrap;
 }
 
 section > h2 {
@@ -57,7 +64,8 @@ section + section {
   margin-top: 2rem;
 }
 
-.column-left, .column-right {
+.column-left,
+.column-right {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -65,7 +73,7 @@ section + section {
 }
 
 .column-left {
-  margin-right: 2rem;
+  padding-right: 2rem;
   order: 0;
   width: 60%;
 }
@@ -86,7 +94,7 @@ section + section {
   &-name {
     font-family: $sans-serif-heading;
     font-size: 3rem;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     line-height: 1.5;
   }
 
@@ -109,21 +117,22 @@ section + section {
   }
 
   &-header {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   &-title {
     font-weight: 700;
+    font-size: .95rem;
   }
 
   &-subtitle {
     color: $subheading-color;
-    font-size: .8rem;
+    font-size: 0.8rem;
     line-height: 1.5;
   }
 
   &-description {
-    font-size: .8rem;
+    font-size: 0.8rem;
     line-height: 1.5;
   }
 
@@ -149,15 +158,21 @@ section + section {
     }
   }
 
+  &-contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
   &-contact {
     color: $subheading-color;
-    font-size: .8rem;
+    font-size: 0.8rem;
     line-height: 2;
-    padding-bottom: .25rem;
+    padding-bottom: 0.25rem;
 
     > i {
       font-weight: 700;
-      margin-right: .5rem;
+      margin-right: 0.5rem;
     }
   }
 }
@@ -166,7 +181,7 @@ section + section {
  * Expertise
  */
 .expertise {
-  font-size: .8rem;
+  font-size: 0.8rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -177,12 +192,12 @@ section + section {
     box-sizing: border-box;
     color: $heading-color;
     line-height: 1.2;
-    padding-right: .5rem;
+    padding-right: 0.5rem;
     width: 50%;
   }
 
   &-gauge {
-    height: .5rem;
+    height: 0.5rem;
     width: 50%;
   }
 }
@@ -196,17 +211,17 @@ section + section {
   margin-bottom: 1.25rem;
 
   &-header {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   &-title {
     font-weight: 700;
-    font-size: .95rem;
+    font-size: 0.95rem;
   }
 
   &-subtitle {
     color: $subheading-color;
-    font-size: .8rem;
+    font-size: 0.8rem;
     line-height: 1.5;
   }
 
@@ -217,6 +232,10 @@ section + section {
 
   &-description {
     line-height: 1.5;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -238,13 +257,13 @@ section + section {
     width: 50%;
 
     &-header {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
 
     &-name {
-      font-size: .95rem;
+      font-size: 0.95rem;
       font-weight: 700;
-      margin-bottom: .25rem;
+      margin-bottom: 0.25rem;
 
       > a {
         border-bottom: 1px dashed $border-color;
@@ -254,11 +273,12 @@ section + section {
 
     &-date {
       color: $subheading-color;
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
 
-    &-description, &-technologies {
-      font-size: .8rem;
+    &-description,
+    &-technologies {
+      font-size: 0.8rem;
     }
 
     &-description {
@@ -267,30 +287,184 @@ section + section {
     }
 
     &-technologies {
-      padding-top: .8rem;
+      padding-top: 0.8rem;
+
       > i {
-        margin-right: .5rem;
+        margin-right: 0.5rem;
       }
     }
   }
 }
 
 .reference {
-  font-size: .8rem;
+  font-size: 0.8rem;
+  margin: 1.25rem 0;
+
+  &.bottom {
+    display: none;
+  }
 }
 
 .footer {
   color: #bdc0ba;
   font-family: $sans-serif-normal;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: center;
   margin: 2em 0;
 }
-
-@media screen {
+@media screen and (min-width: 1200px) {
   .page {
     width: 1050px;
-    height: 1485px;
-    overflow: hidden;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .page {
+    &:after,
+    &:before {
+      width: calc(100% - 7rem);
+    }
+    padding: 2rem 3.5rem;
+    width: 960px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .page {
+    &:after,
+    &:before {
+      width: calc(100% - 6rem);
+    }
+    margin: 2rem auto;
+    padding: 2rem 3rem;
+    width: calc(100% - 4rem);
+  }
+}
+@media screen and (max-width: 960px) {
+  .portfolio {
+    flex-direction: column;
+
+    .project {
+      width: 100%;
+
+      &-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  section {
+    margin-bottom: 1.25rem;
+  }
+
+  section > h2 {
+    margin-bottom: 1rem;
+  }
+
+  section + section {
+    margin-top: 0;
+  }
+
+  .profile {
+    &-contacts {
+      flex-direction: row;
+    }
+
+    &-contact {
+      width: 50%;
+    }
+  }
+
+  .column-left,
+  .column-right {
+    width: 100%;
+  }
+
+  .column-right {
+    order: 0;
+  }
+
+  .column-left {
+    margin: 0;
+    order: 1;
+    padding-right: 0;
+  }
+
+  .reference {
+    &.side {
+      display: none;
+    }
+
+    &.bottom {
+      display: block;
+    }
+  }
+
+  .portfolio {
+    .project:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+@media screen and (max-width: 620px) {
+  .page {
+    &:after,
+    &:before {
+      width: calc(100% - 4rem);
+    }
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 0 0 2rem;
+  }
+
+  .header-name {
+    font-size: 2.5rem;
+  }
+
+  .profile {
+    &-contacts {
+      flex-direction: column;
+    }
+
+    &-contact {
+      width: 100%;
+    }
+  }
+
+  .portfolio {
+    .project {
+      &-header {
+        display: block;
+      }
+    }
+  }
+
+  .reference {
+    margin: .5rem 0;
+  }
+
+  .footer {
+    font-size: .6rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header-name {
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: .3rem;
+  }
+
+  .header-title {
+    font-size: .8rem;
+  }
+
+  .expertise {
+    min-height: 2.2rem;
   }
 }
