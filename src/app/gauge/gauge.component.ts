@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { animate, state, style, transition } from '@angular/core';
 
 @Component({
   selector: 'rsm-gauge',
@@ -15,7 +14,7 @@ export class GaugeComponent implements OnInit {
 
   get percentage(): string {
     if (!this.max) {
-      return '0';
+      return '0.0%';
     }
     return ((this.value / this.max) * 100).toPrecision(3) + '%';
   }
