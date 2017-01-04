@@ -167,6 +167,15 @@ export const RESUME = {
   ],
   'portfolio': [
     {
+      'name': 'AIMS Sales and Growth Insight',
+      'date': new Date(2016, 8, 17),
+      'link': 'https://nfang.github.io/aims-sales-growth-insight',
+      'technologies': 'Angular 2, Data visualization',
+      'description': `
+        A data visualization tool to depict components of sales objectives.
+      `
+    },
+    {
       'name': 'Haru - daily task manager',
       'date': new Date(2016, 5, 20),
       'link': 'https://haruapp.surge.sh',
@@ -181,16 +190,6 @@ export const RESUME = {
       'description': `
         A web app that picks winners from all attendees of a Piaget
         product launch event.
-      `
-    },
-    {
-      'name': 'Kerry Centre NYE wish wall',
-      'date': new Date(2014, 11, 31),
-      'link': 'http://kc.ww.surge.sh',
-      'technologies': 'jQuery, CSS3 animation',
-      'description': `
-        An interactive visual product that lets people write New Year wishes
-        on tablets, and projects them to an LED screen.
       `
     },
     {
